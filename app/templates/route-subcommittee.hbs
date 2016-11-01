@@ -1,0 +1,7 @@
+<h1>If this works, brownie points?</h1>
+{{log model}}
+<ul>
+  {{#each model as |subcommittee|}}
+      <li><span class="upper">{{subcommittee.chamber}}</span>: {{subcommittee.name}}</li>
+  {{/each}}
+</ul>

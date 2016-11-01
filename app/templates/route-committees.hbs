@@ -1,5 +1,10 @@
 <ul>
   {{#each model as |committee|}}
-    <li><span class="upper">{{committee.chamber}}</span>: {{committee.name}}</li>
+    {{!-- {{#link-to 'route-subcommittee' committee}} --}}
+      <button class="btn btn-warning" {{action 'subcommitteeLookup' committee }}>
+        <li><span class="upper">{{committee.chamber}}</span>:
+        {{committee.name}}</li>
+      </button>
+    {{!-- {{/link-to}} --}}
   {{/each}}
 </ul>
