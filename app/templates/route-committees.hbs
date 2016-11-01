@@ -1,10 +1,10 @@
 <ul>
   {{#each model as |committee|}}
-    {{!-- {{#link-to 'route-subcommittee' committee}} --}}
-      <button class="btn btn-warning" {{action 'subcommitteeLookup' committee.committee_id }}>
-        <li><span class="upper">{{committee.chamber}}</span>:
-        {{committee.name}}</li>
-      </button>
-    {{!-- {{/link-to}} --}}
+    <button class="btn btn-primary
+    " {{action 'subcommitteeLookup' committee.committee_id }}>
+      <li><span class="upper">{{committee.chamber}}</span>:
+      {{committee.name}}</li>
+    </button>
+    <hr>
   {{/each}}
 </ul>
